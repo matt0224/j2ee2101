@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 //第一次結果是空白的  //後來改寫
-/**
+/**   dir得絕對路徑要對上 parm value那邊
  * Servlet implementation class matt11
  */
 @WebServlet("/matt11")
@@ -61,6 +61,17 @@ public class matt11 extends HttpServlet {
 			 
 		 }
 		 
+//		 String uploadPath =context.getInitParameter("upload-path");
+//		  
+//		 FileOutputStream fout=   //這邊是成功的
+//		 new FileOutputStream(
+//				 new FileOutputStream(new File(uploadPath,filename));
+//				 
+//
+//				  fout.write(buf);
+//		          fout.flush();
+//		          fout.close();		 
+//		 
 //		File here = new File(".");
 //		out.print(here.getAbsolutePath()); //得到絕對路徑的方法 上面跟這邊兩行
 		
