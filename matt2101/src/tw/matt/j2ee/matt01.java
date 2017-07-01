@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 
                
 	//自動生成改成iii01.php
-	@WebServlet("/III01.php")
+	@WebServlet("/matt01")
 	public class matt01 extends HttpServlet {
 		protected void doGet(HttpServletRequest request, HttpServletResponse response)
 				throws ServletException, IOException {
 			//System.out.println("doget");
-			
+			response.setContentType("text/html; charset=UTF-8");
 			try(PrintWriter writer=response.getWriter()){ //用try使用自動關閉
 			writer.write("hello,world");
 			writer.flush();
