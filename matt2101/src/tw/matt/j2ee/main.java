@@ -66,7 +66,7 @@ public class main extends HttpServlet {
 				"		<th>Password</th>\r\n" + 
 				"		<th>delete</th>\r\n" + 
 				"	</tr>");
-		out.println("</table>");
+		out.println("</table>");  
 		try {
 		if(rs !=null) {
 			while(rs.next()) {
