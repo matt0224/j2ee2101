@@ -34,32 +34,32 @@ public class matt11 extends HttpServlet {
 		 
 		 Part part=request.getPart("upload");
 		 
-		 Collection<String> cc= part.getHeaderNames();
-		 for(String header:cc) {
-			 String v=part.getHeader(header);
-			 out.print(header+":"+v+"<br />");
-		 }
-		 String filename =part.getSubmittedFileName();
-		 out.print(filename+"<br>");
-		 String name =part.getName();  // html input name;
-		 long size =part.getSize();
-		 out.print(name+":"+size);
+//		 Collection<String> cc= part.getHeaderNames();
+//		 for(String header:cc) {
+//			 String v=part.getHeader(header);
+//			 out.print(header+":"+v+"<br />");
+//		 }
+//		 String filename =part.getSubmittedFileName();
+//		 out.print(filename+"<br>");
+//		 String name =part.getName();  // html input name;
+//		 long size =part.getSize();
+//		 out.print(name+":"+size);
 		 
 		 //開始讀取資料
-		 byte[] buf=new byte[(int)size];
-		 BufferedInputStream bin=
-				 new BufferedInputStream(part.getInputStream());
-		 bin.read(buf);
-		 bin.close();
+//		 byte[] buf=new byte[(int)size];
+//		 BufferedInputStream bin=
+//				 new BufferedInputStream(part.getInputStream());
+//		 bin.read(buf);
+//		 bin.close();
 		 
 		 ServletContext context= getServletContext();
 		 Enumeration<String> names= context.getInitParameterNames();
-		 while(names.hasMoreElements()) {
-			 String pname=names.nextElement();
-			 out.print(pname+"="+
-			  context.getInitParameter(pname)+"<br>"); ///做到這邊沒有配置初始參數卡官
-			 
-		 }
+//		 while(names.hasMoreElements()) {
+//			 String pname=names.nextElement();
+//			 out.print(pname+"="+
+//			  context.getInitParameter(pname)+"<br>"); ///做到這邊沒有配置初始參數卡官
+//			 
+//		 }
 		 
 //		 String uploadPath =context.getInitParameter("upload-path");
 //		  
@@ -80,29 +80,29 @@ public class matt11 extends HttpServlet {
 //		 FileOutputStream fout=   這邊是成功的
 //				 new FileOutputStream(
 //						 "C:\\Users\\Mac\\git\\j2ee\\matt2101\\WebContent\\dir1"+filename);
-		 FileOutputStream fout=
-				 new FileOutputStream(
-						 "/matt2101/WebContent/dir1/"+filename);
+//		 FileOutputStream fout=
+//				 new FileOutputStream(
+//						 "/matt2101/WebContent/dir1/"+filename);
 //		  fout.write(buf);
 //          fout.flush();
 //          fout.close();
-		// part.getInputStream();
+//		 part.getInputStream();
 		 
-		// request.getContentType();
-		 String type=request.getContentType();
-		 int len=request.getContentLength();
-		 
-		BufferedReader br=request.getReader();
-		String line;
-		while((line=br.readLine())!=null) {
-			out.println(line+"<br>");
-			
-		}
-		br.close();
-		
-		
-		 response.getWriter().write("counter:"+counter);
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		 request.getContentType();
+//		 String type=request.getContentType();
+//		 int len=request.getContentLength();
+//		 
+//		BufferedReader br=request.getReader();
+//		String line;
+//		while((line=br.readLine())!=null) {
+//			out.println(line+"<br>");
+//			
+//		}
+//		br.close();
+//		
+//		
+//		 response.getWriter().write("counter:"+counter);
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 

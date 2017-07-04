@@ -16,17 +16,19 @@ public class matt10 extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		  String gender =request.getParameter("gerder");
+		 String gender =request.getParameter("gender");
 	
-		  String hobby =request.getParameter("hobby");
-		//  String[] hobby =request.getParameterValues("hobby");
+		  //String hobby =request.getParameter("hobby");
+		  String[] hobbys =request.getParameterValues("hobby");
 		
 		response.setContentType("text/html; charset=UTF-8");
-		//response.getWriter().write(gender);
+		response.getWriter().write(gender);
 		StringBuffer sb= new StringBuffer();
 		
+		for(String hobby : hobbys) {
+			response.getWriter().write(hobby);
+		}
 		
-	//	response.getWriter().write(hobby);
 	}
 
 
