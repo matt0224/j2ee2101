@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-// 這邊要改 呈現是一直跑
+//  呈現是一直跑  OK只活一次static 無法活在執行緒
 @WebServlet("/matt33")
 public class matt33 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,7 +27,6 @@ public class matt33 extends HttpServlet {
 				try {
 					Thread.sleep(500);
 				} catch (InterruptedException e) { //sorun with
-				
 				}
 			}
 		}).start();
