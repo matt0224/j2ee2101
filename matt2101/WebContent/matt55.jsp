@@ -8,12 +8,12 @@
 </head>
 <body>
  <h1> matt c</h1>
- <hr>
- <jsp:forward page="matt56.jsp">
-    <jsp:param  name="a"  value="10"/>
-    <jsp:param  name="b"  value="3"/>
-     url55 頁面56
- </jsp:forward>
  
+<jsp:forward page="matt56.jsp">
+	<jsp:param name="a" value="10" />
+	<jsp:param name="b" value="3" />
+
+</jsp:forward>
+ <!-- 55執行 url55檔案是56 -->
 </body>
 </html>

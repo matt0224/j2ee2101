@@ -9,7 +9,8 @@
 <body>
   <%
      application.setAttribute("x", 123); //第二個參數 java數字也是物件
-     request.setAttribute("key1", (int)(Math.random()*49+1));
+     request.setAttribute("x", (int)(Math.random()*49+1));
+                         //上面key1都改成x
      String x= request.getParameter("x"); //接收參數
      
      

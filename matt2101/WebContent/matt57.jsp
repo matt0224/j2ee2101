@@ -6,7 +6,7 @@
       // member.setId("001"); member.setName("matt");
       Member  member2=new Member("002","matt");
       
-      application.setAttribute("memember", member2);
+      application.setAttribute("member", member2);
       member2.setId("003");
      
     %>

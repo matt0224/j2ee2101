@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
     
 <jsp:useBean id="member" class="tw.matt.beans.Member"/> <!--class位置賦予 new id給member 下面 property用  -->
-<jsp:setProperty property="member" name="id" value="${param.id}"/> 
-<jsp:setProperty property="member" name="name" value="${param.name}"/>   
+<jsp:setProperty property="id" name="member" value="${param.id}"/> 
+<jsp:setProperty property="name" name="member" value="${param.name}"/>   
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>

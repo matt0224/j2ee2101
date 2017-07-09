@@ -22,7 +22,7 @@ public class Member implements Serializable {
     
     public void setId(String id) {this.id=id;}
     public void setName(String name) {this.name=name;}
-    public String getID() {return id;}
+    public String getId() {return id;}
     public String getName() {return name;}
     
     public void m1() {  //後面這邊邏輯比較多 所以字串
