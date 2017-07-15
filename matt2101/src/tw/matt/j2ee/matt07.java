@@ -19,7 +19,7 @@ public class matt07 extends HttpServlet {
  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		
+	
 	   int x= Integer.parseInt(request.getParameter("x")) ;
 	   int y= Integer.parseInt(request.getParameter("y")) ;
 	   int result=x+y;

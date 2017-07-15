@@ -27,11 +27,11 @@
  Name1:${usernames[0]}<br>
  List1:${list[param.i] }<br> <!--list [0]->可以下參數的 list[param.i] -->
  Account:${map["account"] }<br>
- ${10+3 }<br>
+ ${10 + 3 }<br>
 ${(param.i=="1")? "yes" : "no" }<br>
-${1>3 }<br><!-- 出 t or f -->
+${1 > 3 }<br><!-- 出 t or f -->
 ${"a" < "b" }<br>
-${"12">3 }<br>
+${"12" > 3 }<br>
 
 
 </body>
