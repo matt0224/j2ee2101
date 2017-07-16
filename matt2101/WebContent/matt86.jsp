@@ -12,7 +12,7 @@
 </head>
 <body>  
    <%
-   String uploadPath=
+    String uploadPath=
  	pageContext.getServletContext().getInitParameter("upload-path");
     MultipartRequest req=new MultipartRequest(request,uploadPath,"UTF-8");
     

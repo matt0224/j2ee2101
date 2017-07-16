@@ -7,12 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="matt84.jsp" 
-    enctype="multipart/form-data" method="post"></form>
-  <input type="file" name="upload">
-  <input type="file" name="upload">
-  <input type="file" name="upload">
-  <input type="file" name="upload">
-  <input type="submit" name="Upload">
+
+<form action="matt084.jsp" 
+	enctype="multipart/form-data" method="post">
+	<input type="file" name="upload" /><br>
+	<input type="file" name="upload" /><br>
+	<input type="file" name="upload" /><br>
+	<input type="file" name="upload" /><br>
+	<input type="submit" value="Upload" />
+</form>
+
 </body>
 </html>
