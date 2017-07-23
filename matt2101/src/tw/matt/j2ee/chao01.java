@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
                
 	//自動生成改成iii01.php
-	@WebServlet("/matt01")
-	public class matt01 extends HttpServlet {
+	@WebServlet("/choa01")
+	public class chao01 extends HttpServlet {
 		protected void doGet(HttpServletRequest request, HttpServletResponse response)
 				throws ServletException, IOException {
 			//System.out.println("doget");

@@ -1,0 +1,21 @@
+<mata http-equiv="expires" content="-1"/>
+
+<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script >                                               //92>57  60>93
+$.ajaxSetup({ cache: false });                      //92號等訊息待命先跑  //93送訊息 //回92看到收到
+function requestMesg(){
+    $.get("matt057", function(data, status){  //60來接收要求 等候要求
+    	$("#mesg").html(data); //拿到訊息都在摳
+    	requestMesg();
+    });
+}                  
+requestMesg();
+</script>
+
+<h1>matt Big Company</h1>
+<hr />
+<div id="mesg"></div>
+<hr />
+hello,wd

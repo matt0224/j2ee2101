@@ -1,0 +1,48 @@
+<mata http-equiv="expires" content="-1"/>
+
+<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+	$.ajaxSetup({ cache: false });
+	function getData(){
+	    $.get("matt54", function(data, status){
+	    	$("#here").html(data);
+	    });
+	}
+	function getData2(){
+	    $.get("matt55", function(data, status){
+	    	$("#here2").html(data);
+	    });
+	}
+	function getData3(){
+	    $.get("matt56", function(data, status){
+	    	$("#here3").html(data);
+	    });
+	}
+	function getData4(){
+	    $.get("matt57", function(data, status){
+	    	$("#mesg").html(data);
+	    });
+	}
+</script>
+
+<h1>matt Big Company</h1>
+<hr />
+<input type="button" onclick="getData()" value="Get Data" />
+<hr />
+<div id="here"></div>
+<hr />
+<input type="button" onclick="getData2()" value="Get Data2" />
+<hr />
+<div id="here2"></div>
+<hr />
+<input type="button" onclick="getData3()" value="Get Data3" />
+<hr />
+<div id="here3"></div>
+<hr />
+<input type="button" onclick="getData4()" value="Get Message" />
+<hr />
+<div id="mesg"></div>
+
+
